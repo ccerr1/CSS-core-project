@@ -1,0 +1,40 @@
+/* Color Pallette
+#1B4079 - DARK CERULEAN (blue)
+#4D7C8A - TEAL BLUE
+#7F9C96 - ROMAN SILVER
+#8FAD88 - DARK SEA GREEN
+#CBDF90 - MEDIUM SPRING BUD
+*/
+
+/* Global Styles
+------------------------*/
+
+body {
+}
+a {
+  color: rgb(121, 27, 27);
+}
+a:hover {
+  text-decoration: none;
+}
+/* Header and Footer
+------------------------*/
+header, footer {
+  background: #CBDF90;
+  color: #1B4079;
+}
+header h1, header h2 {
+ color: #4D7C8A;
+}
+
+/* Work Experience
+---------------------*/
+.work {
+  background: #7F9C96;
+}
+
+/* Education
+-------------------*/
+.education {
+background: #4D7C8A;
+}
