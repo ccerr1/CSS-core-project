@@ -4,64 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Cerritos | Resume</title>
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- // Intro -->
     <header>
-        <img src="img/Carlos.jpg" alt="Carlos Cerritos" width="200" height="200">
-        <h1>Carlos Cerritos</h1>
-        <h2>Web Developer</h2>
-        <p>I am a new web developer who is excited to continue to learn and execute what I have learned so far.</p>
+        <div class="content-wrap">
+        <img class="profile-img col-narrow" src="img/Carlos.jpg" alt="Carlos Cerritos"> <!----width="200" height="200" modified using CSS, that is why it was removed from HTML-->
+        <div class="col-wide">
+            <h1>Carlos Cerritos</h1>
+            <h2>Web Developer</h2>
+            <p>I am a new web developer who is excited to continue to learn and execute what I have learned so far. As a developer, I specialize in creating modular and scalable front-end architectures. Currently, my focus is to provide websites to small business owners at affordable price</p>
+            <p> As a small business owner, I understand the difficulties individuals face when budgeting to ensure the business runs properly. This is why affordability is our number one priority. Furthermore, as your business grows we can also modify your original design to ensure it grows as well</p>
+        </div>
+        </div>
     </header>
     
     <main> 
         <!-- // Work Experience -->
         <section class="work">
+            <div class="content-wrap">
             <h2>Work Experience</h2>
 
-            <!-- Job Details: copy this whole block to add more jobs -->
-            <h3>CBRN NCO</h3>
-            <p>1st Special Forces Command</p>
-            <p>April 10, 2017 to August 26, 2018.</p>
+            <!--Job 1 Details-->
+            <div class="col-narrow">
+                <h3>Independent Front-end Developer</h3>
+                <p>Independent / Freelance</p>
+                <p>June 2019 - Present</p>
+            </div>
+
+            <div class="col-wide">
+                <p>Provides front-end related services</p>
+            </div>
             
-            <!-- Add as many paragraphs as you need. -->
-            <p>Managed personnel, equipment, and Organizational level training.</p>
-            
-            <!-- This list can be deleted if you don't want to use it. -->
-            <p>CBRN NCO:</p>
-            <ul>
-                <li>Personnel Management</li>
-                <li>Equipment Procurement</li>
-                <li>Responsible for the training and equipment of over 1,500 Soldiers</li>
-            </ul>
+
+            <!--Job 2 Details-->
+            <div class="col-narrow">
+                <h3>CBRN NCO</h3>
+                <p>1st Special Forces Command</p>
+                <p>April 10, 2017 to August 26, 2018.</p>
+            </div>
+
+            <div class="col-wide">
+                
+                <!-- Add as many paragraphs as you need. -->
+                <p>Managed personnel, equipment, and Organizational level training.</p>
+                
+                <!-- This list can be deleted if you don't want to use it. -->
+                <p>CBRN NCO:</p>
+                    <ul>
+                        <li>Personnel Management</li>
+                        <li>Equipment Procurement</li>
+                        <li>Responsible for the training and equipment of over 1,500 Soldiers</li>
+                    </ul>
+            </div>
             <!-- end of Job Details block. -->
-            
+        </div>
         </section>
-
-
         <!-- // Education -->
         <section class="education">
+            <div class="content-wrap">
             <h2>Education</h2>
 
             <!-- School details: copy this whole block to add more schools. -->
             <h3>AMU, 2016 to 2018</h3>
-            <p>Bachelor's degree in Management</p>
+             <p>Bachelor's degree in Management</p>
             
             <!-- Add as many paragraphs as you need. -->
            
             <!-- End of school details. -->
+            </div>
         </section>
     </main>
     
     <!-- // Footer & contact info -->
     <footer>
+        <div class="content-wrap">
         <h2>Let's Keep in Touch!</h2>
         
         <!-- Social media and contact links. Add or remove any networks. -->
-        <div>
+        <div class="contact-info">
             <a href="mailto:carlos@faithwebdesigners.com">carlos@faithwebdesigners.com</a>
             <a href="https://www.faithwebdesigners.com" target="_blank">Faith Web Designers</a>
             <a href="https://www.linkedin.com/in/carlos-cerritos-56a31b51/" target="_blank">LinkedIn</a>
@@ -69,6 +93,7 @@
         </div>
 
         <p>Copyright 2019 Carlos Cerritos</p>
+        </div>
     </footer>
 </body>
 </html>
