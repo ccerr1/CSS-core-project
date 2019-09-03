@@ -30,6 +30,9 @@ h2 {
   font-size: 40px;
   margin-top: 0;
 }
+h3 {
+  margin: 0;
+}
 a {
   color: rgb(121, 27, 27);
 }
@@ -45,14 +48,18 @@ a:hover {
 .col-narrow {
   width: 30%;
   float: left;
-  min-height: 175px;
+  /* min-height: 175px;  use before applied suedo class */
 }
 .col-wide {
   width: 70%;
   float: left;
   padding-left: 20px;
-  min-height: 175px;
+  /* min-height: 175px; use before applied suedo class */
 }
+.uppercase {
+  text-transform: uppercase;
+}
+
 /* Header and Footer
 ------------------------*/
 header, footer {
@@ -89,9 +96,20 @@ footer {
 .work {
   background: #4D7C8A;
 }
-
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
 /* Education
 -------------------*/
 .education {
 background: #4D7C8A;
+}
+p + h3 {
+  margin-top: 30px;
 }
