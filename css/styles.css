@@ -7,7 +7,7 @@
 
 /* Global Styles
 ------------------------*/
-/* apply a natural box layout model to all elements, but allowing components to change */
+/* the Box Model Fix, apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
 }
@@ -42,7 +42,7 @@ a:hover {
 .content-wrap {
   max-width: 950px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 60px 50px;
   overflow: auto;
 }
 .col-narrow {
@@ -59,6 +59,13 @@ a:hover {
 .uppercase {
   text-transform: uppercase;
 }
+.btn {
+  text-decoration: none;
+  background: #CBDF90;
+  color: #4D7C8A;
+  padding: 10px;
+  display: inline-block;
+}
 
 /* Header and Footer
 ------------------------*/
@@ -68,6 +75,10 @@ header, footer {
   /* #1B4079;*/
 }
 /* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
 .profile-img {
   border-radius: 50%; /* 6px value will make corners rounded */
   /* width: 300px; 
@@ -82,6 +93,12 @@ header h1, header h2 {
  /* #4D7C8A; */
  margin: 0;
 }
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 /* footer*/
 footer {
   text-align: center;
@@ -91,6 +108,25 @@ footer {
   display: inline-block
 }
 
+/*navigation
+------------------*/
+nav {
+  text-align: center;
+  background: #CBDF90;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:#4D7C8A;
+  
+}
 /* Work Experience
 ---------------------*/
 .work {
