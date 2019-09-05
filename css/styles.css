@@ -45,17 +45,7 @@ a:hover {
   padding: 60px 50px;
   overflow: auto;
 }
-.col-narrow {
-  width: 30%;
-  float: left;
-  /* min-height: 175px;  use before applied suedo class */
-}
-.col-wide {
-  width: 70%;
-  float: left;
-  padding-left: 20px;
-  /* min-height: 175px; use before applied suedo class */
-}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -151,4 +141,29 @@ h3 ~ p {
 }
 p + h3 {
   margin-top: 30px;
+}
+
+/* Media Queries
+-------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+    /* min-height: 175px;  use before applied suedo class */
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    /* min-height: 175px; use before applied suedo class */
+  }
+}
+@media (max-width: 899px) {
+ header {
+  text-align: center;
+ }
+  
+}
+.profile-img {
+  width: 200px;
 }
